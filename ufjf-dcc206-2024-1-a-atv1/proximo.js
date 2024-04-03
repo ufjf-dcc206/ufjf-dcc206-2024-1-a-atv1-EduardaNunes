@@ -1,3 +1,3 @@
-export function proximo(n){
-    return n + n % 3 + 1;
+export function proximo(x){
+    return x + 1 + x % 3
 }

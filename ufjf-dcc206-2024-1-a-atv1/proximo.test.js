@@ -1,25 +1,22 @@
-import { describe, it, expect} from 'vitest';
-import {proximo} from "./proximo.js";
+import {test, expect} from 'vitest';
+import {proximo} from "./proximo.js"
 
-describe('proximo()', async () => {
-    it('deve retornar 1 ao receber 0', () => {
-        expect(proximo(0)).toBe(1);
-    });
+test("proximo(0) retorna 1", () => {
+    expect(proximo(0)).toBe(1)
+})
 
-    it('deve retornar 3 ao receber 1', () => {
-        expect(proximo(1)).toBe(3);
-    });
+test("proximo(1) retorna 3", () => {
+    expect(proximo(1)).toBe(3)
+})
 
-    it('deve retornar 5 ao receber 2', () => {
-        expect(proximo(2)).toBe(5);
-    });
+test("proximo(2) retorna 5", () => {
+    expect(proximo(2)).toBe(5)
+})
 
-    it('deve retornar 4 ao receber 3', () => {
-        expect(proximo(3)).toBe(4);
-    });
+test("proximo(3) retorna 4", () => {
+    expect(proximo(3)).toBe(4)
+})
 
-    it('deve retornar 6 ao receber 4', () => {
-        expect(proximo(4)).toBe(6);
-    });
-    
-});
+test("proximo(4) retorna 6", () => {
+    expect(proximo(4)).toBe(6)
+})
